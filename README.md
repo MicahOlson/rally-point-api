@@ -65,7 +65,7 @@ This is an application for organizations and their members to manage emergency, 
   https://www.everbridge.com/
 11:00–11:30: Continue research on similar apps  
   https://www.youtube.com/watch?v=mSD-SVLXF18
-  
+11:30–12:00: Move from wireframe to storyboard
 
 
 ---
