@@ -60,6 +60,7 @@ This is an application for organizations and their members to manage emergency, 
 09:00–09:30: Create user stories
 09:30–10:00: Begin information architecture diagram
 10:00–10:30: Continue with IA diagram and initiate wireframe
+10:30–11:00: Search for similar websites for inspiration
 
 ---
 
