@@ -43,7 +43,8 @@ This is an application for organizations and their members to manage emergency o
 ## User Stories
 * As a Rally Point site admin, I want to create an organization for a new customer and establish their initial organization admin user account(s) 
 * As a Rally Point site admin, I want full control of all site functionality, including deletion of organizations when appropriate
-* As an organization admin, I want to add and remove organization members, as well as see their profile details
+* As an organization admin, I want to see a list of all my members and their status
+* As an organization admin, I want to add and remove organization members, as well as update their profile details
 * As an organization admin, I want to update my organization's details
 * As an organization admin, I want to show/update a dashboard with the status of my organization
 * As an organization admin, I want to post notices of disruption events impacting members and have alerts automatically sent to them by email and text
@@ -84,6 +85,8 @@ This is an application for organizations and their members to manage emergency o
 02:00–02:30: Revert to working on per-page wireframe   
 02:30–03:00: Brainstorm user roles and plan out organization and user creation process
 03:00-03:30: Re-conceive roles to include a Rally Point site admin who will create an organization (customer) and add initial org admins  
+03:30–04:00: Update user stories and slightly revise proposal
+04:00–04:30: Revise information architecture diagram and wireframe
 
 ---
 
