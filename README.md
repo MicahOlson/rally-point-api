@@ -37,7 +37,11 @@ This is an application for organizations and their members to manage emergency, 
 
 --- 
 
-## Description
+## Day 1 Timeline
+08:00–08:30: Initialize project, review proposal, brainstorm
+08:30–09:00: Research wireframing and tools
+
+
 
 ---
 
