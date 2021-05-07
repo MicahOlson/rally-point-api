@@ -54,18 +54,20 @@ This is an application for organizations and their members to manage emergency, 
 
 ---
 
-## Day 1 Timeline
+## 5/7/21 Timeline
 08:00–08:30: Initialize project, review proposal, brainstorm  
 08:30–09:00: Research wireframing and tools  
 09:00–09:30: Create user stories  
 09:30–10:00: Begin information architecture diagram  
 10:00–10:30: Continue with IA diagram and initiate wireframe  
 10:30–11:00: Search for similar apps for inspiration  
-  https://www.criticalarc.com/
-  https://www.everbridge.com/
+  https://www.criticalarc.com/  
+  https://www.everbridge.com/  
 11:00–11:30: Continue research on similar apps  
-  https://www.youtube.com/watch?v=mSD-SVLXF18
-11:30–12:00: Move from wireframe to storyboard
+  Everbridge platform demo: https://www.youtube.com/watch?v=mSD-SVLXF18  
+11:30–12:00: Move from wireframe to storyboard  
+01:00–01:30: Continue storyboard, begin Rails Action Mailer research
+
 
 
 ---
