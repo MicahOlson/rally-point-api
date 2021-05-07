@@ -78,7 +78,8 @@ This is an application for organizations and their members to manage emergency, 
 ```  
   https://www.youtube.com/watch?v=wN3rD3cggNw  
 ```
-02:00–02:30: Continue working on wireframe  
+02:00–02:30: Revert to working on per-page wireframe   
+02:30–03:00: Brainstorm user roles and plan out organization and user creation process
 
 ---
 
