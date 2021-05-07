@@ -78,6 +78,7 @@ This is an application for organizations and their members to manage emergency, 
 ```  
   https://www.youtube.com/watch?v=wN3rD3cggNw  
 ```
+02:00–02:30: Continue working on wireframe  
 
 ---
 
