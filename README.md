@@ -58,6 +58,7 @@ This is an application for organizations and their members to manage emergency, 
 08:00–08:30: Initialize project, review proposal, brainstorm
 08:30–09:00: Research wireframing and tools
 09:00–09:30: Create user stories, additional brainstorming
+09:30–10:00: Begin information architecture diagram
 
 ---
 
