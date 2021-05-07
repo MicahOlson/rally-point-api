@@ -28,20 +28,36 @@ This is an application for organizations and their members to manage emergency, 
 * Display a dynamic geographical map to direct members to physical rally points when appropriate
 * Feed local disruption event information to organization pages from an API
 * Add multiple sites/locations option for organizations, and additional authorization limits to members for these locales
+* React front-end
 
 ### What additional tools, frameworks, libraries, APIs, or other resources will these additional features require?
 * Flexbox and/or Bootstrap
 * Rails Action Mailer
 * Google Maps (embedded)
 * Possible disruption event API being researched
+* React, Redux
 
 --- 
+
+## User Stories
+* As a leader of an organization, I want to create a manager-role user account that can then create an organization and add member-role users
+* As a leader of the organization, I want to show/update a dashboard with the status of my organization at its various locations
+* As a leader of the organization, I want to post notices of disruption events impacting members and have alerts automatically sent to them by email and text
+* As a leader of the organization, I want to make continuity plans available to members for different disruption scenarios
+* As a leader of the organization, I want to see the status of members when they check-in during events
+* As a member of the organization, I want to log in and see a dashboard listing all my organizations and their status 
+* As a member of the organization, I want to select an organization to see additional information
+* As a member of the organization, I want to be able to "check-in" with my organizations to acknowledge events and update my status (e.g., WFH, In-Transit, sheltered in place)
+* As a member of the organization, I want to see different scenarios for continuity plans and select them for more details
+* As a member of the organization, I want to see a map identifying the physical location of my organizations' rally points
+* As a member of the organization, I want to see an evacuation route to the rally point based on my current location
+
+---
 
 ## Day 1 Timeline
 08:00–08:30: Initialize project, review proposal, brainstorm
 08:30–09:00: Research wireframing and tools
-
-
+09:00–09:30: Create user stories, additional brainstorming
 
 ---
 
