@@ -40,7 +40,8 @@ This is an application for organizations and their members to manage emergency, 
 --- 
 
 ## User Stories
-* As a leader of an organization, I want to create a manager-role user account that can then create an organization and add member-role users
+* As a Rally Point site-administrator, I want to create an organization for a new customer and establish their initial admin-role user account(s) 
+* As a organization's admin-role user, I want to add and remove member-role users
 * As a leader of the organization, I want to show/update a dashboard with the status of my organization at its various locations
 * As a leader of the organization, I want to post notices of disruption events impacting members and have alerts automatically sent to them by email and text
 * As a leader of the organization, I want to make continuity plans available to members for different disruption scenarios
@@ -80,6 +81,7 @@ This is an application for organizations and their members to manage emergency, 
 ```
 02:00–02:30: Revert to working on per-page wireframe   
 02:30–03:00: Brainstorm user roles and plan out organization and user creation process
+03:00-03:30: Re-conceive roles to include a Rally Point site admin who will create an organization (customer) and add initial org admins
 
 ---
 
