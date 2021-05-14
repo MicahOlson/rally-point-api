@@ -55,30 +55,7 @@ This is an application for organizations and their members to manage emergency o
 * As an organization member, I want to see different scenarios for my organization's continuity plans and select them to see more details
 * As an organization member, I want to see a map identifying the physical location of my organizations' rally points
 * As an organization member, I want to see an evacuation route to the rally point based on my current location
-
----
-
-## 5/7/21 Work Log
-* 08:00–08:30: Initialize project, review proposal, brainstorm  
-* 08:30–09:00: Research wireframing and tools  
-* 09:00–09:30: Create user stories  
-* 09:30–10:00: Begin information architecture (IA) diagram  
-* 10:00–10:30: Continue with IA diagram and initiate wireframe  
-* 10:30–11:00: Search for similar apps for inspiration  
-  (https://www.criticalarc.com/ | https://www.everbridge.com/)  
-* 11:00–11:30: Continue research on similar apps  
-  (Everbridge platform demo: https://www.youtube.com/watch?v=mSD-SVLXF18)  
-* 11:30–12:00: Move from wireframe to storyboard  
-* 01:00–01:30: Continue storyboard, begin Rails Action Mailer research  
-  (https://guides.rubyonrails.org/action_mailer_basics.html)  
-* 01:30–02:00: Continue Rails Action Mailer research  
-  (https://www.youtube.com/watch?v=wN3rD3cggNw)  
-* 02:00–02:30: Revert to working on per-page wireframe   
-* 02:30–03:00: Brainstorm user roles and plan out organization and user creation process  
-* 03:00-03:30: Re-conceive roles to include a Rally Point site admin who will create an organization (customer) and add initial org admins  
-* 03:30–04:00: Update user stories and slightly revise proposal  
-* 04:00–04:30: Revise information architecture diagram and wireframe  
-* 04:30–05:00: Proofread README and add IA diagram and wireframe to repo  
+ 
 
 ---
 
