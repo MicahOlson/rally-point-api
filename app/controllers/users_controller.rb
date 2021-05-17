@@ -19,7 +19,12 @@ class UsersController < ApplicationController
 
   def create
     user = User.create!(user_params)
-    json_response(user, :created)
+    if user
+      session[:user_id] = user.id
+      json_response(user: user, status: :created)
+    else
+      render json: { status: 422 }
+    end
   end
 
   def update
@@ -40,7 +45,6 @@ class UsersController < ApplicationController
       :email,
       :password,
       :password_confirmation,
-      :password_digest,
       :first_name,
       :last_name,
       :mobile_phone,
