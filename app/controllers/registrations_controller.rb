@@ -12,7 +12,7 @@ class RegistrationsController < ApplicationController
         user: user
       }
     else
-      render json: { status: 500 }
+      render json: { status: 422 }
     end
   end
 end
