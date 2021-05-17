@@ -20,7 +20,7 @@ class UsersController < ApplicationController
   def create
     user = User.create!(user_params)
     if user
-      session[:user_id] = user.id
+      # session[:user_id] = user.id
       json_response(user: user, status: :created)
     else
       render json: { status: 422 }
