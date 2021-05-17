@@ -1,4 +1,4 @@
-# Rally Point
+# Rally Point API
 ## _Manage Disruption Events and Stay Connected_
 ### by: Micah L. Olson
 ### created: 5/7/2021
