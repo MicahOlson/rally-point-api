@@ -1,61 +1,110 @@
 # Rally Point API
-## _Manage Disruption Events and Stay Connected_
+## _Back-end to [Rally Point](https://github.com/MicahOlson/rally-point)_
 ### by: Micah L. Olson
 ### created: 5/7/2021
-### updated: 5/19/2021
+### updated: 5/21/2021
+
 ---
-## Project Proposal
-### Project's Purpose or Goal: (What will it do for users?)
-This is an application for organizations and their members to manage emergency or similar disruption events by allowing organizers to post response and/or continuity plans, communicate alerts and updates for events to members, and provide a check-in process during events for all users to directly share their status as an alternative to the more antiquated call-tree process.
 
-### List the absolute minimum features the project requires to meet this purpose or goal:
-* A database to store information for the organization, users, event posts, and response plans
-* Full CRUD functionality for organizers to manage their organization, members, and events
-* Limited RU functionality for members to update their own account details (e.g., contact info, status)
-* Authentication and role authorization to limit access of organizers and members solely to their own organization, and members solely to main organization pages and their own accounts
-* A UI for users to log in, see or post events depending on role, access or post response plans depending on role, and check-in with their status
+## Description
+This **CORS-enabled** back-end `Ruby on Rails` API provides an interface for its front-end `React` [counterpart](https://github.com/MicahOlson/rally-point) to access a database storing organization, event notification, and member information, as well as authentication and full **CRUD** functionality.
 
-### What tools, frameworks, libraries, APIs, modules and/or other resources (whatever is specific to your track, and your language) will you use to create this MVP? List them all here. Be specific.
+---
+
+## Technologies
 * Ruby
 * Rails
-* ERB/HTML
-* CSS/SASS
+* Bundler
+* Rake
 * PostgreSQL
+* Puma
+* Rack::Cors
+* Markdown
+* git
 
-### If you finish developing the minimum viable product (MVP) with time to spare, what will you work on next? Describe these features here: Be specific.
-* Improve styling and add responsive design for mobile
-* Alert users via email and/or text when a new event has been posted for their organization
-* Display a dynamic geographical map to direct members to physical rally points when appropriate
-* Feed local disruption event information to organization pages from an API
-* Add many-to-many relationship from many members to many organizations
-* Add multiple sites/locations option for organizations, and additional authorization limits to members for these locales
-* React front-end
+---
 
-### What additional tools, frameworks, libraries, APIs, or other resources will these additional features require?
-* Flexbox and/or Bootstrap
-* Rails Action Mailer
-* Google Maps (embedded)
-* Possible disruption event API being researched
-* React, Redux
+## Requirements
+* You will need to use your system's **`terminal` emulator** to set up and locally use this API.
 
---- 
+* **`PostgreSQL 12.6`** is required to serve this application's database.  
+  ([how to install PostgreSQL 12.6](https://www.learnhowtoprogram.com/ruby-and-rails/getting-started-with-ruby/installing-postgres))
 
-## User Stories
-* As a Rally Point site admin, I want to create an organization for a new customer and establish their initial organization admin user account(s) 
-* As a Rally Point site admin, I want full control of all site functionality, including deletion of organizations when appropriate
-* As an organization admin, I want to see a list of all my members and their status
-* As an organization admin, I want to add and remove organization members, as well as update their profile details
-* As an organization admin, I want to update my organization's details
-* As an organization admin, I want to show/update a dashboard with the status of my organization
-* As an organization admin, I want to post notices of disruption events impacting members and have alerts automatically sent to them by email and text
-* As an organization admin, I want to make continuity plans available to members for different disruption scenarios
-* As an organization admin, I want to see the status of members when they check-in during events
-* As an organization member, I want to log in and see a dashboard with the status of my organization
-* As an organization member, I want to be able to "check-in" with my organization to acknowledge events and update my status (e.g., WFH, in transit, sheltered in place)
-* As an organization member, I want to see different scenarios for my organization's continuity plans and select them to see more details
-* As an organization member, I want to see a map identifying the physical location of my organizations' rally points
-* As an organization member, I want to see an evacuation route to the rally point based on my current location
- 
+* You must have **`Ruby 2.6.5`** installed to be able to run this application.  
+  ([how to install Ruby 2.6.5](https://www.learnhowtoprogram.com/ruby-and-rails/getting-started-with-ruby/installing-ruby))
+
+* **`Bundler`** is needed to install all application dependencies. Install it *after* you install `Ruby`.
+  ```bash
+  $ gem install bundler
+  ```
+
+---
+
+## Installation and Setup
+* **Clone this repository** to a local directory using the command-line tools `cd` and `git`.  
+  ([how to install git](https://www.learnhowtoprogram.com/introduction-to-programming/getting-started-with-intro-to-programming/git-and-github))
+  ```bash
+  $ cd ~/<local_directory>/
+  $ git clone https://github.com/MicahOlson/rally-point-api.git
+  ```
+
+* **Navigate to the top level directory** of the cloned repository.  
+  ```bash
+  $ cd rally-point-api/
+  ``` 
+
+* **Install all application dependencies** using `Bundler`.
+  ```bash
+  $ bundle install
+  ```
+
+* **Start the `PostgreSQL` database system** and keep it running while you interact with this service.
+  ```bash
+  $ postgres
+  ```
+
+  * Access the command line again by opening another `terminal` tab. Press and briefly hold these key combinations.  
+    `command-t` (macOS) or `control-t` (Windows, GNU/Linux)
+
+  * IMPORTANT! Be sure to **shut the database system down** when you are done using the app.  
+    `control-c`
+
+* **Recreate the databases** and **seed** a sample dataset.
+  ```bash
+  $ bundle exec rake db:setup
+  ```
+
+* The following **database schema** is automatically created by the above command.
+  <div>
+    <img src="public/images/db_schema.png" alt="A diagram of the database schema" width="40%">
+  </div>
+
+* **Launch the local `Puma` web server** to start the API service.
+  ```bash
+  $ rails server
+  ```
+
+  * IMPORTANT! Be sure to **shut the web server down** when you are done using the app.  
+    `control-c`
+
+* Type **localhost:3000** into your browser's address bar and hit `enter`.
+
+* **Set up the front-end application** for this project at https://github.com/MicahOlson/rally-point.
+
+---
+
+## Code Editors
+* **Recommendations** if you would like to utilize a **GUI** for opening or editing this application's files:
+  * [Visual Studio Code](https://code.visualstudio.com) - "Code editing. Redefined."
+  * [Atom](https://atom.io) - "A hackable text editor for the 21st Century."
+  * [SublimeText](https://www.sublimetext.com) - "A sophisticated text editor for code, markup and prose."
+
+---
+
+## Notes, Bugs, Fixes, and Future Improvements
+* No known bugs.
+* E2E testing to be incorporated at a future point in time.
+* If you find a bug, please report it at the email address below.
 
 ---
 
